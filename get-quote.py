@@ -7,9 +7,9 @@ def principal():
   f.close()
   star = 0
   last = len(quotes)-1
-  rnd = random.randint(star,last)
-  print(rnd)
-  print(quotes[rnd])
+  for i in range(0,3,1): #Ciclo for para generar multiple cotizaciónes
+    rnd = random.randint(star,last)#seleccio aleatoria de posicion de la matriz
+    print(quotes[rnd])
 
 if __name__== "__main__":
   principal()
